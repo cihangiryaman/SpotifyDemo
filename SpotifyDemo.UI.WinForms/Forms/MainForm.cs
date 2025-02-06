@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SpotifyDemo.BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace SpotifyDemo.UI.WinForms.Forms
 {
 	public partial class MainForm : Form
 	{
+		private readonly UnitOfWork _unitOfWork;
+
 		public MainForm()
 		{
 			InitializeComponent();
+			_unitOfWork = new UnitOfWork();
 		}
 	}
 }
