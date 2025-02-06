@@ -23,7 +23,7 @@ namespace SpotifyDemo.DAL.Contexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlite("Data Source=" + Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.Parent.Parent.FullName + "SpotifyDemo.DAL\\Database.db");
+            optionsBuilder.UseSqlite("Filename=Database.db");
         }
     }
 }
