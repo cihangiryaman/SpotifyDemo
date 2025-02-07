@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SpotifyDemo.DAL.Entities
 {
-    public class Album:IEntity<Album>
+    public class Album:IEntity<Album> //tüm albüm
     {
         public int Id { get; set; }
         public int FK_UserId { get; set; }

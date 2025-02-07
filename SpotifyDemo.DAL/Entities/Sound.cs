@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SpotifyDemo.DAL.Entities
 {
-    public class Sound : IEntity<Sound>
+    public class Sound : IEntity<Sound> // her türlü ses dosyası
     {
         public int Id { get; set; }
         public int FK_TypeId { get; set; }

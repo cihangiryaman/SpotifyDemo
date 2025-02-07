@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SpotifyDemo.DAL.Entities
 {
-    public class Podcast : IEntity<Podcast>
+    public class Podcast : IEntity<Podcast> // tüm podcast programı
     {
         public int Id { get; set; }
         public int FK_UserId { get; set; }
